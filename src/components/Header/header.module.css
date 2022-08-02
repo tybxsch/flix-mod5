@@ -1,0 +1,27 @@
+.conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    height: 110px;
+
+    margin: 50px;
+    /* left: 72px; */
+    /* top: 32px; */
+
+    background: #030813;
+    border-radius: 30px;
+}
+
+.conteiner>nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.conteiner>img{
+    border: solid yellow ;
+    width: 100px;
+    height: 100px;
+}
