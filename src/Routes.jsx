@@ -4,7 +4,7 @@ import Header from './components/Header/Header'
 import Cadastro from './pages/Cadastro/Cadastro'
 import Filme from './pages/Filme/Filme'
 import Home from './pages/Home/Home'
-import Editor from './pages/Editor/FilmesEdit'
+import Editor from './pages/Editor/Editor'
 
 const Routes = () => {
   return (
