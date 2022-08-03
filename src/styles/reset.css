@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    width: 100%;
+    min-height: 100vh;
+    --pretofundo: #030813;
+    --lilasfonte: #C8B1FA;
+}
+
