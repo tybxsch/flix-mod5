@@ -1,8 +1,15 @@
 import React from 'react'
+import S from '../Home/Home.module.css'
+
 
 const Home = () => {
   return (
-    <div>Página de Home</div>
+    <div className={S.conteiner}>
+      <div className={S.botoes}>
+        
+
+      </div>
+    </div>
   )
 }
 

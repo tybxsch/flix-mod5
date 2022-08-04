@@ -10,18 +10,26 @@
     /* left: 72px; */
     /* top: 32px; */
 
-    background: #030813;
+    background: rgba(15, 7, 49, 0.43);
     border-radius: 30px;
 }
 
 .conteiner>nav{
+    background-color: none;
     display: flex;
     width: 50%;
     justify-content: space-around;
 }
 
-.conteiner>img{
-    border: solid yellow ;
-    width: 100px;
-    height: 100px;
+.link{
+    text-decoration: none;
+    text-shadow:  2px 2px 3px #8F00FF
+}
+
+.logo{
+    margin: 0%;
+    background-color: #0000;
+    /* width: 35%; */
+    /* height: 100%; */
+    border-radius: 30px;
 }
