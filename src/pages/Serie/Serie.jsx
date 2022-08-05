@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getSeriesById } from '../../services/api';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import CardSerie from '../../components/CardSerie/CardSerie';
+import CardSerie from '../../components/CardSerie/CardSerie.jsx';
 
 
 // LISTAR FILMES ESTILO CATALOGO
@@ -24,13 +24,14 @@ const Serie = () => {
   return (
     <div>
       <h1> TESTE: {params.id}</h1>
+      <CardSerie/>
       
-      {!!series && series.map((serie) =>{
+      {/* {!!series && series.map((serie) =>{
         return (<CardSerie
           title={serie.title}
           urlimg={serie.urlimg}
            />)
-      })}
+      })} */}
     </div>
   )
 };
