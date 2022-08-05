@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import { getSeries } from '../../services/api';
+import { getSeriesById } from '../../services/api';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import CardSerie from '../../components/CardSerie/CardSerie';
@@ -13,17 +13,17 @@ const Serie = () => {
   const [series, setSeries] = useState([]);
 
  const require = async () => {
-  const response = await getSeries(params.series);
+  const response = await getSeriesById(params.id);
   setSeries(response);
  };
 
  useEffect(() => {
   require();
- }, [params.series]);
+ }, [params.id]);
 
   return (
     <div>
-      <h1>Serie</h1>
+      <h1> TESTE: {params.id}</h1>
       
       {!!series && series.map((serie) =>{
         return (<CardSerie

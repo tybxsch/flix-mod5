@@ -10,6 +10,12 @@ export const getSeries = async () => {
     return json;
 };
 
+export const getSeriesPorGenero = async (genre) => {
+    const response = await instance.get(`/series/${genre}`);
+    const json = await response.data.series;
+    return json;
+  };
+
 export const getSeriesById = async (id) => {
     const response = await instance.get(`/series/${id}`);
     const json = await response.data.series;
