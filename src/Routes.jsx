@@ -6,6 +6,7 @@ import Filme from './pages/Filme/Filme'
 import Home from './pages/Home/Home'
 import Editor from './pages/Editor/Editor'
 import Footer from './components/Footer/Footer'
+import Notificacao from './pages/Notificacao/Notificacao'
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/editor" element={<Editor />} />
         <Route path="/filme" element={<Filme />}/>
+        <Route path="/notificacao" element={<Notificacao />}/>
 
 
 

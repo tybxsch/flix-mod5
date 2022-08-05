@@ -10,6 +10,7 @@ const Header = () => {
         <Link to='/cadastro'>Cadastro de filmes</Link>
         <Link to='/editor'>Editar Filme</Link>
         <Link to='/filme'>Catálogo</Link>
+        <Link to='/notificacao'>Notificacao</Link>
       </nav>
     </header>
   )
