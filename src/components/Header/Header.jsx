@@ -12,7 +12,7 @@ const Header = () => {
         <Link className={S.link} to='/'>Home</Link>
         <Link className={S.link} to='/cadastro'>Cadastro de filmes</Link>
         <Link className={S.link} to='/editor'>Editar Filme</Link>
-        <Link className={S.link} to='/filme'>Catálogo</Link>
+        <Link className={S.link} to='/serie'>Catálogo</Link>
       </nav>
       <img src={Login} alt="" />
     </header>
