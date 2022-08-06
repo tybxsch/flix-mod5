@@ -6,10 +6,11 @@ const instance = axios.create({
 
 export const getSeries = async () => {
     const response = await instance.get("/series");
-    const json = await response.data.series;
+    const json = await response.data['Series catalogadas'];
+    console.log(json)
     return json;
 };
-
+getSeries();
 export const getSeriesPorGenero = async (genre) => {
     const response = await instance.get(`/series/${genre}`);
     const json = await response.data.series;

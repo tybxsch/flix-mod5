@@ -1,0 +1,17 @@
+.catalogo{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    /* column-gap: 100px; */
+    justify-content: space-evenly ;
+    justify-items: center;
+}
+
+/* .page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+} */
