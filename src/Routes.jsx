@@ -21,7 +21,6 @@ const Routes = () => {
         <Route path="/notificacao" element={<Notificacao />}/>
 
 
-
     </Switch>
     <Footer />
     </BrowserRouter>

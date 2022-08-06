@@ -1,0 +1,32 @@
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.notificacao{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: inset 0 0 0 , 0 0 1em black;
+}
+.notificacao:nth-child(odd){
+    display: flex;
+    background-color: #2E5654;
+}
+.notificacao:nth-child(even) {
+    background-color: #60A397;
+  }
+
+.image{
+    display: flex;
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 2rem;}
+
+p{
+    display: flex;
+    margin-left: 2px;
+}
