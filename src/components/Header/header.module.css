@@ -1,12 +1,12 @@
 .conteiner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    width: 90%;
-    height: 110px;
-
-    margin: 50px;
+    width: 98%;
+    height: 150px;
+    margin-top: 0px;
+    /* margin: 50px; */
     /* left: 72px; */
     /* top: 32px; */
 
@@ -18,7 +18,8 @@
     background-color: none;
     display: flex;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
+    font-family: pixeloidB;
 }
 
 .link{
@@ -27,9 +28,9 @@
 }
 .link:hover{
     color: #fFFF;
-    text-shadow:  2px 2px 3px #ffffff;
-    font-size: large;
-
+    text-shadow:  2px 2px 3px var(--secondary);
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 .logo{
     width: 17%;
