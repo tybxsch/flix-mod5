@@ -1,0 +1,51 @@
+.form{
+    width: 90%;
+
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    display: flex;
+    justify-content: space-around;
+}
+.form>form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form>img{
+    width: 350px;
+    height: 450px;
+
+    border-radius: 20px;
+    border: 20px solid #ffff;
+}
+
+.form>form>label{
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.krl{
+    height: 100px;
+    color: black;
+}
+
+.normal{
+    height: 40px;
+    color: black;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.botoes>button{
+    width: 250px;
+    height: 50px;
+}
