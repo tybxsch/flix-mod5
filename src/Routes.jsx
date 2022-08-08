@@ -5,6 +5,7 @@ import Cadastro from './pages/Cadastro/Cadastro'
 import Serie from './pages/Serie/Serie'
 import Home from './pages/Home/Home'
 import Editor from './pages/Editor/Editor'
+import Loading from './pages/Loading/Loading'
 
 const Routes = () => {
   return (
@@ -16,7 +17,7 @@ const Routes = () => {
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/editor" element={<Editor />} />
         <Route path="/serie" element={<Serie />}/>
-
+        <Route path="/loading" element={<Loading/>}/>
 
 
     </Switch>

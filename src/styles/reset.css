@@ -12,5 +12,16 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
-    --primary: #010101
+    --primary: #010101;
+    --secondary: #4cf2d1;
+}
+
+@font-face {
+    font-family:pixeloid;
+    src: url(/src/assets/pixeloid-font/PixeloidMono-1G8ae.ttf);
+}
+
+@font-face {
+    font-family: pixeloidB;
+    src: url(/src/assets/pixeloid-font/PixeloidSansBold-RpeJo.ttf);
 }
