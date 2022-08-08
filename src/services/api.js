@@ -25,7 +25,7 @@ export const getSeriesById = async (id) => {
 
 export const postSeries = async (body) => {
     const response = await instance.post("/series/novaSerie", body);
-    const json = await response.data.msg;
+    const json = await response.data;
     return json;
 };
 

@@ -1,0 +1,35 @@
+.form{
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.form>form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form>img{
+    width: 300px;
+
+    border-radius: 20px;
+    border: 2n0px solid #ffff;
+}
+
+.form>form>label{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.krl{
+    height: 200px;
+}
+
+.normal{
+    height: 40px;
+    color: black;
+}
