@@ -4,7 +4,7 @@ import React from 'react'
 
 const Filme = () => {
   return (
-    <div>Catáogo</div>
+    <div>Catálogo</div>
   )
 }
 
