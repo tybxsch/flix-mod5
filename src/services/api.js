@@ -25,7 +25,7 @@ export const getSeriesById = async (id) => {
 
 export const postSeries = async (body) => {
     const response = await instance.post("/series/novaSerie", body);
-    const json = await response.data; //estava response.data.msg (msg ao que tudo indica não existe na api)
+    const json = await response.data; //estava response.data.msg (msg ao que tudo indica não existe na apin)
     return json;
 };
 
