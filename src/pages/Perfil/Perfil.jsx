@@ -8,10 +8,10 @@ const Perfil = () => {
       <div className={S.container}>
           <img src={Login} alt="" className={S.image}/>
           <div className={S.blocoTexto}>
-   <h2 className={S.blocoTitulo}>NOME</h2>
+   <h1 className={S.blocoTitulo}>NOME</h1>
    <input type="text" name="" id="" />
-   <h2 className={S.blocoTitulo}>BIO</h2>
-   <input type="text" name="" id="" />
+   <h1 className={S.blocoTitulo}>BIO</h1>
+   <input className={S.blocoBio} type="text" name="" id="" />
    </div>
    </div>
    <div className={S.containerDois}>
@@ -27,15 +27,15 @@ const Perfil = () => {
     <div className={S.pontuacoes}> 
    
    <div className={S.blocoPontuacoes}><h1 >Follower</h1>
-   <h2>0</h2>
+   <h1>0</h1>
    </div>
 <hr />
    <div className={S.blocoPontuacoes}><h1 >Publicações</h1>
-  <h2>10</h2>
+  <h1>10</h1>
   </div>
 <hr />
   <div className={S.blocoPontuacoes}><h1 >Assistir</h1>
-  <h2>30</h2>
+  <h1>30</h1>
   </div>
 
   </div>    
