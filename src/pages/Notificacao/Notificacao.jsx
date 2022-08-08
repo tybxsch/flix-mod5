@@ -3,8 +3,7 @@ import Noticia  from '../../components/Noticia/Noticia.jsx'
 const Notificacao = () => {
   return (
         <div>    
-            <Noticia/>
-        
+            <Noticia />    
         </div>
         
   )

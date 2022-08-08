@@ -1,0 +1,61 @@
+.bloco{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.blocoTitulo{
+    display: flex;
+    background-color: #0F0731 ;
+    margin-bottom: 7px;
+    margin-top: 2rem;
+}
+.blocoTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerDois{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    /* align-items: center; */
+}
+
+.pontuacoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    background-color: #0F0731;
+    border-radius: 1rem;
+}
+
+.blocoPontuacoes{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.image{
+    display: flex;
+    width: 25vw;
+    height: 300px;
+    padding: 2rem   ;
+}
+
+h2, h1{
+    display: flex;
+    color: #E8FFFF;
+}
+

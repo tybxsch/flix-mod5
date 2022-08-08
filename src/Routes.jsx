@@ -7,7 +7,7 @@ import Home from './pages/Home/Home'
 import Editor from './pages/Editor/Editor'
 import Footer from './components/Footer/Footer'
 import Notificacao from './pages/Notificacao/Notificacao'
-import Login from './pages/Login/Login'
+import Perfil from './pages/Perfil/Perfil'
 
 const Routes = () => {
   return (
@@ -20,7 +20,7 @@ const Routes = () => {
         <Route path="/editor" element={<Editor />} />
         <Route path="/filme" element={<Filme />}/>
         <Route path="/notificacao" element={<Notificacao />}/>
-        <Route path='/login' element={<Login />}/>
+        <Route path='/perfil' element={<Perfil />}/>
 
 
     </Switch>
