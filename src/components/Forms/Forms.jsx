@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import S from '../Forms/Forms.module.css'
+import postSerie from '../../services/api.js'
 // import CardSerie from "../CardSerie/CardSerie.jsx";n
 
 const Forms = () => {
+    const [formData, setFormData] = useState({
+        
+    })
   return (
     <div className={S.form}>
         <form action="">
