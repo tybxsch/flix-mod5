@@ -1,4 +1,4 @@
-<img width="355" alt="DEV" src="https://user-images.githubusercontent.com/88693318/183529952-75b5b394-d233-476a-847a-f3c94fcda005.png">
+<img width="100%" alt="DEV" src="https://user-images.githubusercontent.com/88693318/183529952-75b5b394-d233-476a-847a-f3c94fcda005.png">
 
 
 ​	DevFlix, uma rede social de compartilhamento. DevFlix tem o foco voltado para mídias que abordam o mundo tecnológico. Pensando no dia a dia de desenvolvedores, programadores e pessoas interessadas no mundo da tecnologia, que tem o costume de consumir filmes, séries e animações com esses temas. Apresentamos então um ambiente de discussões, opiniões e compartilhamentos.
