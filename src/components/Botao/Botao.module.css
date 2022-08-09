@@ -3,4 +3,12 @@
     background-color: var(--secondary);
     box-shadow: 5px 5px 5px var(--darkSecond);
     text-shadow:  2px 2px 3px var(--purple);
+    border-radius: 5px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: var(--darkSecond);
+    font-size: large;
+    text-shadow:  2px 2px 3px var(--secondary);
 }
