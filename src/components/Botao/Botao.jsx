@@ -1,8 +1,11 @@
 import React from 'react'
+import S from './Botao.module.css'
 
 const Botao = ({text}) => {
   return (
-    <button>{text}</button>
+    <button className={S.botao}>
+      {text}
+    </button>
   )
 }
 

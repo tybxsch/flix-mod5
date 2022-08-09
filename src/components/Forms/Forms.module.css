@@ -1,32 +1,46 @@
 .form{
-    width: 90%;
-
-    /* display: grid; */
-    /* grid-template-columns: auto auto; */
+    width: 60%;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 250px;
+    font-family: pixeloid;
+    text-shadow:  2px 2px 3px var(--purple);
 }
-.form>form{
 
+input{
+    width: 350px;
+}
+
+.inputs{
     display: flex;
     flex-direction: column;
 }
 
-.form>img{
+.formText{
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    justify-content: space-between;
+}
+
+
+.imgPreview{
     width: 350px;
     height: 450px;
 
-    border-radius: 20px;
-    border: 20px solid #ffff;
+    border-radius: 5px;
+    border: 10px solid var(--darkSecond);
 }
 
 .form>form>label{
-    width: 200px;
+    width: 350px;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
 
-    margin: 20px;
+    margin: 20px; */
 }
 
 .krl{
@@ -40,12 +54,13 @@
 }
 
 .botoes{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .botoes>button{
-    width: 250px;
+    width: 251px;
     height: 50px;
 }

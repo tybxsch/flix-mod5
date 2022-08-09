@@ -29,32 +29,36 @@ const Forms = () => {
     //  }
   return (
     <div className={S.form}>
+        <div className={S.formText}>
         <form action="">
+            <div className={S.inputs}>
             <label htmlFor="" >
                 Título da serie:
+                <br></br>
                 <input 
                 type="text" 
+                placeholder='Insira o Titulo'
                 className={S.normal}
                 value={formData.title}
                 onChange={({target})=> handleChange(target,"title")}
                 />
             </label>
-            {/* <label htmlFor="">
-                Data de lançamento
-                <input type="date" />
-            </label> */}
+           <br></br>
             <label htmlFor="">
                 Gênero:
+                <br></br>
                 <input 
                 type="text" 
+                placeholder='Insira o Gênero'
                 className={S.normal} 
                 value={formData.genre}
                 onChange={({target})=> handleChange(target,"genre")}
                 />
             </label>
-
+            <br></br>
             <label htmlFor="">
                 Temporada:
+                <br></br>
                 <input 
                 type="number" 
                 className={S.normal}
@@ -62,44 +66,46 @@ const Forms = () => {
                 onChange={({target})=> handleChange(target,"seasons")} 
                 />
             </label>
-
+            <br></br>
             <label htmlFor="">
-                Url_imagem:
+                Imagem:
+                <br></br>
                 <input 
                 type="text" 
+                placeholder='URL da imagem'
                 className={S.normal}
                 value={formData.urlimg}
                 onChange={({target})=> handleChange(target,"urlimg")}
                  />
             </label>
-
+            <br></br>
             <label>
                 Sinopse:
+                <br></br>
                 <input 
                 type="text" 
+                placeholder='Insira uma sinopse'
                 className={S.krl}
                 value={formData.description}
                 onChange={({target})=> handleChange(target,"description")}
                 />
             </label>
-        </form>
+            <br></br>
+            </div>
+            </form>
+            <img className={S.imgPreview}
+            src={formData.urlimg} alt="" />
+           
+            </div>
 
-        {/* <div> */}
-            <img src={formData.urlimg} alt="" />
-            {/* <img src="https://br.web.img3.acsta.net/pictures/14/04/14/10/51/458918.jpg" alt="" /> */}
-            {/* <h4>nome serie</h4>
-            <p>Sinopse</p>
-            <p>Genero</p>
-        </div> */}
+
+
         <div className={S.botoes}>
-        {/* Alterar pelo componente Button */}
             <Botao text='Cancelar'/>
             <Botao text='Excluir'/>
-            {/* <<button>Cancelar</button>> */}
-            {/* <button>Excluir</button> */}
-            {/* <button onClick={handleDelete}>Excluir</button> */}
-            <button onClick={handleSave}>Salvar</button>
+            <Botao onClick={handleSave} text='Salvar'/>
         </div>
+
     </div>
   )
 }
