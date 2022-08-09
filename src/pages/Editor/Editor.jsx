@@ -1,10 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
+import Ficha from '../../components/Ficha/Ficha'
+import { getSeries } from '../../services/api';
 
 // EDITAR E DELETAR FILMES
 
 const Editor = () => {
+  const [ficha, setFicha] = useState([]);
+
+  const require = async () => {
+    const response = await getSeries();
+    console.log(response);
+    setFicha(response);
+  };
+
+  useEffect(() => {
+    require();
+   }, []);
+
   return (
-    <div>Editor</div>
+    <div>
+      {!!ficha && ficha.map((ficha)=>{
+        return (
+          <Ficha
+            key={ficha.id}
+            title={ficha.title}
+            genre={ficha.genre}
+          />
+        )
+      })
+      }
+    </div>
   )
 }
 
