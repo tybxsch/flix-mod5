@@ -25,8 +25,18 @@ const Home = () => {
 
   return (
     <div className={S.pageHome}>
-        <h1>Em destaque</h1>
-        <br />
+      <div className={S.banner}>
+      </div>
+      <div className={S.gambizita}>
+        <h1>Vem para DevFlix!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolor, eveniet facere, repellat omnis, necessitatibus dolorem maiores veniam voluptas quam sapiente sint deserunt enim unde cumque? Ipsa dolorum quo cupiditate. jasoiJOAS asoidjaoisdjaoiOIJDoaisdjASD AoisjdaSD
+          DASDOIAJSDOIAJSDIOASJDIOAS
+        </p>
+      </div>
+      <div className={S.destaque}>
+         <h2>Em destaque</h2>
+      </div>
+      <div className={S.agoravai}>
       <div className={S.catalogoHome}>        
         {!!series && series.map((serie) =>{
           return (<MovieRow
@@ -35,6 +45,7 @@ const Home = () => {
             key={serie.id}
             />)
         })}
+      </div>
       </div>
     </div>
   )
