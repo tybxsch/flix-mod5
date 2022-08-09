@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--pretofundo);
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    max-height: 6rem;
+    
+}
+
+.blocoTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    color: var(--lilasfonte);
+    flex-direction: column;
+
+}
