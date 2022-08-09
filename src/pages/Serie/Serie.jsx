@@ -26,7 +26,7 @@ const Serie = () => {
 
   return (
     <div className={S.page}>
-        <h1> TESTE: {}</h1>
+        <h1> Séries {}</h1>
         <br />
       <div className={S.catalogo}>
         {/* <CardSerie/> */}

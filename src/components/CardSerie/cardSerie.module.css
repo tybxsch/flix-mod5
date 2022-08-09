@@ -15,11 +15,12 @@
     padding: 10px;
     border: 10px dotted;
     width: 250px;
+    height: 349px;
 }
 
 .card>h3{
     margin: 10px;
     font-style: oblique;
-    font-family: 'Jura', sans-serif;
+    font-family: pixeloidB;
     font-weight: lighter;
 }
