@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import Cadastro from './pages/Cadastro/Cadastro'
 import Serie from './pages/Serie/Serie'
 import Home from './pages/Home/Home'
@@ -10,6 +11,7 @@ import Loading from './pages/Loading/Loading'
 const Routes = () => {
   return (
     <BrowserRouter>
+    <div className='defaultContainer'>
     <Header />
     <Switch>
 
@@ -21,6 +23,8 @@ const Routes = () => {
 
 
     </Switch>
+    <Footer />
+    </div>
     </BrowserRouter>
   )
 }
