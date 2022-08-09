@@ -24,7 +24,7 @@
 
 .link{
     text-decoration: none;
-    text-shadow:  2px 2px 3px #8F00FF;
+    text-shadow:  2px 2px 3px var(--purple);
 }
 .link:hover{
     color: #fFFF;
