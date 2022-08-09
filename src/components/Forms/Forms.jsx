@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import S from '../Forms/Forms.module.css'
  import {postSeries} from '../../services/api.js'
+ import Botao from '../Botao/Botao'
 // import CardSerie from "../CardSerie/CardSerie.jsx";n
 
 const Forms = () => {
@@ -92,8 +93,10 @@ const Forms = () => {
         </div> */}
         <div className={S.botoes}>
         {/* Alterar pelo componente Button */}
-            <button>Cancelar</button>
-            <button>Excluir</button>
+            <Botao text='Cancelar'/>
+            <Botao text='Excluir'/>
+            {/* <<button>Cancelar</button>> */}
+            {/* <button>Excluir</button> */}
             {/* <button onClick={handleDelete}>Excluir</button> */}
             <button onClick={handleSave}>Salvar</button>
         </div>
