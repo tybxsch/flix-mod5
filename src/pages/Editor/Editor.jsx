@@ -23,6 +23,7 @@ const Editor = () => {
         return (
           <Ficha
             key={ficha.id}
+            id={ficha.id}
             title={ficha.title}
             genre={ficha.genre}
           />

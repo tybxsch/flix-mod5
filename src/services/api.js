@@ -34,5 +34,5 @@ export const editSeries = async (id, body) => {
 };
 
 export const deleteSeries = async (id) => {
-    const responde = await instance.delete(`/series/${id}`);
+    const response = await instance.delete(`/series/${id}`);
 };
