@@ -13,5 +13,30 @@
 
 
 
-<img width="588" alt="figma" src="https://user-images.githubusercontent.com/88693318/183529987-2342bf35-c977-44f6-b497-183820ec401b.png">
+<img width="100%" alt="figma" src="https://user-images.githubusercontent.com/88693318/183529987-2342bf35-c977-44f6-b497-183820ec401b.png">
 
+
+
+
+***
+
+## 💻 Como usar a aplicação: 
+
+1. Clonar repositório 
+    https://github.com/tybxsch/flix-mod5.git
+2. Instalar os pacotes necessários utilizando o comando
+   	npm install
+3. Rodar o projeto com o comando
+   	npm run dev 
+
+
+
+***
+
+### 💻 Tecnologias usadas: 
+
+- NodeJs
+- JavaScript
+- SQLite
+- ReactJs
+- Axios
