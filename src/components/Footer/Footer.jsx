@@ -10,7 +10,7 @@ export const Footer = () => {
         <img src={logo} alt="" className={S.logo} />
         <div className={S.blocoTexto}>
         <p className={S.text}>Todos os direitos reservados©</p>
-        <p className={S.text}>Para Fins Educativos</p>
+        <small className={S.text}>Para Fins Educativos</small>
         </div>
     </footer>
   )

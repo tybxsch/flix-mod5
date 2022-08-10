@@ -103,7 +103,6 @@ const Forms = () => {
 
         <div className={S.botoes}>
             <Botao text='Cancelar'/>
-            <Botao text='Excluir'/>
             <Botao onclick={handleSave} text='Salvar'/>
         </div>
 
