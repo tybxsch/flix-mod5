@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import S from '../CardSerie/cardSerie.module.css'
 import Botao from '../Botao/Botao'
 
-const CardSerie = ({ title, urlimg }) => {
+const CardSerie = ({ title, urlimg, id }) => {
 
 
   return (
@@ -14,7 +14,7 @@ const CardSerie = ({ title, urlimg }) => {
       {/* <img src='https://br.web.img2.acsta.net/r_1280_720/pictures/14/04/14/10/51/458918.jpg'/>
       <h3>Club das Winx</h3> */}
       {/* <Botao text='Assistir'/> */}
-      <Link to='/serieDetails/:id'>
+      <Link to="/serieDetails/:id">
       <Botao text='Assistir'/>
       </Link>
     </div>

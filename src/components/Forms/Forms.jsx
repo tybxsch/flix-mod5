@@ -21,6 +21,7 @@ const Forms = () => {
      function handleSave(event){
         event.preventDefault();
         postSeries(formData);
+        alert("Serie cadastrada com sucesso!");
      }
 
     //  function handleDelete(index){
