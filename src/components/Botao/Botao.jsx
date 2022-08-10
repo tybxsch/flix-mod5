@@ -1,9 +1,9 @@
 import React from 'react'
 import S from './Botao.module.css'
 
-const Botao = ({text}) => {
+const Botao = ({text, onclick}) => {
   return (
-    <button className={S.botao}>
+    <button className={S.botao} onClick={onclick}>
       {text}
     </button>
   )
