@@ -10,6 +10,7 @@ const CardSerie = ({ title, urlimg }) => {
       
       {/* <img src='https://br.web.img2.acsta.net/r_1280_720/pictures/14/04/14/10/51/458918.jpg'/>
       <h3>Club das Winx</h3> */}
+      //button
     </div>
   )
 }

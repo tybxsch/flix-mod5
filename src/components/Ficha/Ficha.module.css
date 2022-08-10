@@ -1,0 +1,23 @@
+.ficha{
+    margin: 50px;
+    width: 90%;
+    height: 70px;
+    background-color: #222222;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.values{
+    margin-block: 7px;
+    padding-inline: 10px ;
+    width: 400px;
+    background-color: #333333;
+}
+
+.icon{
+    width: 30px;
+    margin: 15px;
+}
