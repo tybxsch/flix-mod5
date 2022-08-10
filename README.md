@@ -13,7 +13,7 @@
 
 
 
-<img width="100%" alt="figma" src="https://user-images.githubusercontent.com/88693318/183529987-2342bf35-c977-44f6-b497-183820ec401b.png">
+<img width="50%" height="50%" alt="figma" src="https://user-images.githubusercontent.com/88693318/183529987-2342bf35-c977-44f6-b497-183820ec401b.png">
 
 
 
