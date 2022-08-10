@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import S from '../Forms/Forms.module.css'
- import {postSeries} from '../../services/api.js'
+ import {editSeries, postSeries} from '../../services/api.js'
  import Botao from '../Botao/Botao'
 // import CardSerie from "../CardSerie/CardSerie.jsx";n
 
-const Forms = () => {
+const Forms = ({id}) => {
      const [formData, setFormData] = useState({
+        "id":"",
         "title":"",
         "description":"",
         "genre":"",
@@ -15,7 +16,8 @@ const Forms = () => {
 
      function handleChange(target, key){
         const value = target.value;
-        setFormData({...formData, [key]:value});       
+        setFormData({...formData, [key]:value});  
+        console.log(formData);     
      }
 
      function handleSave(event){
@@ -24,14 +26,30 @@ const Forms = () => {
         alert("Serie cadastrada com sucesso!");
      }
 
-    //  function handleDelete(index){
-    //     setFormData((formData) => formData.splice(index, 1))
-        
-    //  }
+     async function handleUpdate(e){
+        e.preventDefault();
+        // editSeries(id, formData);
+        const response = await editSeries(id, formData);
+        console.log("tetsa");
+        console.log(response)
+      }
+
   return (
     <div className={S.form}>
         <div className={S.formText}>
         <form action="">
+            <label htmlFor="" >
+                Título do ID:
+                <br></br>
+                <input 
+                type="text" 
+                placeholder='Insira o id'
+                className={S.normal}
+                value={formData.id}
+                onChange={({target})=> handleChange(target,"id")}
+                />
+            </label>
+
             <div className={S.inputs}>
             <label htmlFor="" >
                 Título da serie:
@@ -103,6 +121,7 @@ const Forms = () => {
 
         <div className={S.botoes}>
             <Botao text='Cancelar'/>
+            <Botao text='Atualizar Serie' onclick={handleUpdate}/>
             <Botao onclick={handleSave} text='Salvar'/>
         </div>
 

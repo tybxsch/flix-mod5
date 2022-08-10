@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CardSerie from '../../components/CardSerie/CardSerie'
 import { useParams } from 'react-router-dom';
 import { getSeries } from '../../services/api';

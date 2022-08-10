@@ -35,7 +35,8 @@ const Ficha = ({title, genre, id}) => {
 
       {/* buttons  */}
       <div>
-        <Link to="/catalogo"><img className={S.icon} src={edit} alt="" /></Link>
+        <Link to={"/serie/?id="+id}><img className={S.icon} src={edit} alt="" /></Link>
+
         {/* vai para a pagina da serie selecionada e abre para editar || alterar a rota */}
         {/* <button onClick={handleDelete}>KRL</button> */}
         <img className={S.icon} onClick={handleDelete} src={trash} alt="" />

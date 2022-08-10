@@ -30,7 +30,7 @@ export const postSeries = async (body) => {
 };
 
 export const editSeries = async (id, body) => {
-    const response = await instance.patch(`/series/${id}`, body);
+    const response = await instance.put(`/series/${id}`, body);
 };
 
 export const deleteSeries = async (id) => {

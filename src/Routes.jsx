@@ -21,7 +21,7 @@ const Routes = () => {
         <Route path="/editor" element={<Editor />} />
         <Route path="/serie" element={<Serie />}/>
         <Route path="/loading" element={<Loading/>}/>
-        <Route path='/serieDetails/:id' element={<SerieDetails/>}/>
+        <Route path='/serie/:id' element={<SerieDetails/>}/>
 
     </Switch>
     <Footer />
