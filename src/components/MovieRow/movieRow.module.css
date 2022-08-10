@@ -1,0 +1,9 @@
+.movieRow img {
+    width: 200px;
+    height: 280px;
+    padding: 3%;
+}
+.movieRow:hover {
+    transform: scale(0.98);
+    transition-duration: 0.7s;
+}
