@@ -12,6 +12,7 @@ const Ficha = ({title, genre, id}) => {
   // const {id} = useParams();
   function handleDelete() {
         deleteSeries(id)
+        alert('Serie deletada com sucesso');
         console.log(id);
   }
   // console.log(handleDelete);
@@ -36,8 +37,8 @@ const Ficha = ({title, genre, id}) => {
       <div>
         <Link to="/catalogo"><img className={S.icon} src={edit} alt="" /></Link>
         {/* vai para a pagina da serie selecionada e abre para editar || alterar a rota */}
-        <button onClick={handleDelete}>KRL</button>
-          <img className={S.icon} src={trash} alt="" />
+        {/* <button onClick={handleDelete}>KRL</button> */}
+        <img className={S.icon} onClick={handleDelete} src={trash} alt="" />
         {/* alterar trash para button con onclick handleDelte */}
       </div>  
     </div>

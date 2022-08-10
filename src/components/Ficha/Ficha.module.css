@@ -20,4 +20,9 @@
 .icon{
     width: 30px;
     margin: 15px;
+    cursor: pointer;
+}
+.icon:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }

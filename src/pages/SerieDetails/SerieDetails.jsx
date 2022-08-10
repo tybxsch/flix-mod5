@@ -13,15 +13,26 @@ const SerieDetails = () => {
     console.log(response);
     setSeries(response);
 
+    const [formData, setFormData] = useState({
+      "title":"",
+      "description":"",
+      "genre":"",
+      "seasons":"",
+      "urlimg":""
+   });
+
   return (
     <div>
-    {!!series && series.map((serie) =>{
-        return (<CardSerie
-          urlimg={serie.urlimg}
-          title={serie.title}
-          key={serie.id}
-          />)
-      })}
+        <div className={S.img}>
+          <img className={S.imgPreview}
+          src={formData.urlimg} alt="" />
+        </div>
+        <div className={S.infos}>
+          <h2>{formData.title}</h2>
+          <p>{formData.genre}</p>
+          <p>{formData.description}</p>
+          <p>{formData.seasons}</p>
+        </div>
     </div>
   )
 }}
