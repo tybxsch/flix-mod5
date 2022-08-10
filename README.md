@@ -46,6 +46,8 @@
 - Axios
 
 ***
+
+### 🧑‍🤝‍🧑 Time: 
 - [Carolina Santos Marcello](https://github.com/carolsaint)
 - [Eduarda Tybusch](https://github.com/tybxsch/)
 - [Giovana Santos](https://github.com/Givaona)
