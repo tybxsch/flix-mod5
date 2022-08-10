@@ -9,7 +9,6 @@
     height: 80vh;
 }
 .gambizita {
-    text-align: start;
     width: 50%;
     margin-top: -250px;
     margin-bottom: 9%;
@@ -23,12 +22,30 @@
     text-align: start;
     font-family: pixeloid;
 }
-.agoravai {
+.overflow {
     overflow-x: hidden;
 }
 .catalogoHome {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: antiquewhite;
+    transition: all ease 0.8s;
+}
+.movieRowLeft,
+.movieRowRight {
+    position: absolute;
+    width: 40px;
+    height: 280px;
+    z-index: 99;
+    background-color: rgba(192, 0, 230, 0.345);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.movieRowLeft {
+    left: 0;
+}
+.movieRowRight {
+    right: 0;
 }
