@@ -11,8 +11,8 @@ const Header = () => {
       <img src={Logo} alt="" className={S.logo} />
       <nav>
         <Link className={S.link} to='/'>HOME</Link>
-        <Link className={S.link} to='/cadastro'>CADASTRAR FILME</Link>
-        <Link className={S.link} to='/editor'>EDITAR FILME</Link>
+        <Link className={S.link} to='/cadastro'>CADASTRAR SERIE</Link>
+        <Link className={S.link} to='/editor'>EDITAR SERIE</Link>
         <Link className={S.link} to='/serie'>CATÁLOGO</Link>
       </nav>
       <img src={Login} alt="" />
