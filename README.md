@@ -23,10 +23,14 @@
 ## 💻 Como usar a aplicação: 
 
 1. Clonar repositório 
+
     https://github.com/tybxsch/flix-mod5.git
 2. Instalar os pacotes necessários utilizando o comando
+
    	npm install
 3. Rodar o projeto com o comando
+
+
    	npm run dev 
 
 
