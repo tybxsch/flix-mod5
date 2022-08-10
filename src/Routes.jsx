@@ -6,7 +6,7 @@ import Cadastro from './pages/Cadastro/Cadastro'
 import Serie from './pages/Serie/Serie'
 import Home from './pages/Home/Home'
 import Editor from './pages/Editor/Editor'
-import Loading from './pages/Loading/Loading'
+import Loading from './components/Loading/Loading'
 import SerieDetails from './pages/SerieDetails/SerieDetails'
 
 const Routes = () => {

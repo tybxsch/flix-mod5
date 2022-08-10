@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import S from '../Forms/Forms.module.css'
- import {editSeries, postSeries} from '../../services/api.js'
+ import {editSeries, getSeriesById, postSeries} from '../../services/api.js'
  import Botao from '../Botao/Botao'
+//  import {getSeriesById} from '../../services/api.js'
 // import CardSerie from "../CardSerie/CardSerie.jsx";n
 
-const Forms = ({id}) => {
+const Forms = () => {
+     const [id, setId] = useState('0');
      const [formData, setFormData] = useState({
-        "id":"",
+        // "id":"",
         "title":"",
         "description":"",
         "genre":"",
@@ -26,10 +28,19 @@ const Forms = ({id}) => {
         alert("Serie cadastrada com sucesso!");
      }
 
+     async function requestById(){
+        const response= await getSeriesById(id);
+        setFormData(response)
+        console.log(response);
+        
+     }
+
      async function handleUpdate(e){
         e.preventDefault();
         // editSeries(id, formData);
         const response = await editSeries(id, formData);
+        alert("Serie atualizada com sucesso!");
+
         console.log("tetsa");
         console.log(response)
       }
@@ -45,8 +56,9 @@ const Forms = ({id}) => {
                 type="text" 
                 placeholder='Insira o id'
                 className={S.normal}
-                value={formData.id}
-                onChange={({target})=> handleChange(target,"id")}
+                value={id}
+                onChange={({target})=> setId(target.value)}
+                onBlur={requestById}
                 />
             </label>
 

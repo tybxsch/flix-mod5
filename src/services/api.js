@@ -19,7 +19,8 @@ export const getSeriesPorGenero = async (genre) => {
 
 export const getSeriesById = async (id) => {
     const response = await instance.get(`/series/${id}`);
-    const json = await response.data.series;
+    const json = await response.data['Serie por ID'][0];
+    console.log(json);
     return json;
 };
 

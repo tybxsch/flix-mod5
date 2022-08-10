@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import CardSerie from '../../components/CardSerie/CardSerie.jsx';
 import S from '../Serie/Serie.module.css'
+import Loading from '../../components/Loading/Loading';
 
 
 // LISTAR FILMES ESTILO CATALOGO
@@ -12,6 +13,7 @@ import S from '../Serie/Serie.module.css'
 const Serie = () => {
   const params = useParams();
   const [series, setSeries] = useState([]);
+  const [loading, setLoading] = useState(false);
 
  const require = async () => {
   const response = await getSeries();
@@ -22,6 +24,7 @@ const Serie = () => {
 
  useEffect(() => {
   require();
+  setLoading(true) // iniciei o loader, fazer ternário
  }, []);
 
   return (

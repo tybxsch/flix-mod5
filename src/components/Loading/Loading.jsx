@@ -3,7 +3,9 @@ import S from '../Loading/Loading.module.css'
 
 const Loading = () => {
   return (
-    <div className={S.loading}/>
+    <div className={S.conteiner}>
+      <div className={S.loading}/>
+    </div>
   )
 }
 
